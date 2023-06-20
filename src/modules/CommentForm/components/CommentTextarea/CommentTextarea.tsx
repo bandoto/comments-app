@@ -27,8 +27,10 @@ export const CommentTextarea: React.FC<Textarea> = ({ handleAddComment }) => {
   };
 
   const handleClick = () => {
-    handleAddComment(textarea);
-    setTextarea("");
+    if (textarea.length) {
+      handleAddComment(textarea);
+      setTextarea("");
+    }
   };
 
   return (

@@ -51,7 +51,9 @@ export const CommentList: React.FC = () => {
   return (
     <>
       <div className="comment__comments">
-        {isLoading && <Loader />}
+        {isLoading && <Loader text="Loading..." />}
+
+        {!comments.length && <Loader text="No comments" />}
 
         {!isLoading &&
           comments.map((comment) => (
