@@ -1,6 +1,7 @@
-import "./CommentTextarea.scss";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { useDebounce } from "../../../../hooks/useDebounce";
+
+import "./CommentTextarea.scss";
 
 interface Textarea {
   handleAddComment: (text: string) => void;

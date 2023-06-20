@@ -1,9 +1,10 @@
+import React from "react";
 import { Container } from "../../UI/Container/Container";
+import { CommentList } from "../../modules/CommentForm";
 
 import "./MainPage.scss";
-import { CommentList } from "../../modules/CommentForm/components/CommentList/CommentList";
 
-const MainPage = () => {
+const MainPage: React.FC = () => {
   return (
     <section className="comment">
       <Container>

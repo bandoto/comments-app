@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 import "./Container.scss";
 
@@ -7,7 +7,10 @@ interface ContainerProps {
   className?: string;
 }
 
-export const Container: FC<ContainerProps> = ({ children, className }) => {
+export const Container: React.FC<ContainerProps> = ({
+  children,
+  className,
+}) => {
   return (
     <div className={className ? `container ${className}` : "container"}>
       {children}

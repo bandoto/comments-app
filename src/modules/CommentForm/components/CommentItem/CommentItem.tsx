@@ -1,8 +1,8 @@
 import React from "react";
 import { IComment } from "../../models/CommentModels";
+import { Label } from "../../../../UI/Label/Label";
 
 import "./CommentItem.scss";
-import { Label } from "../../../../UI/Label/Label";
 
 interface ItemProps {
   comment: IComment;
