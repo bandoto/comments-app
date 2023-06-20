@@ -1,0 +1,34 @@
+@import './reset.scss';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+
+  background: linear-gradient(#5d8ed9, #e3db37);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}

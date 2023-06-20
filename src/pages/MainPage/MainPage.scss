@@ -1,0 +1,12 @@
+.comment {
+  padding: 0 2rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5rem 0;
+
+    height: 100vh;
+  }
+}
